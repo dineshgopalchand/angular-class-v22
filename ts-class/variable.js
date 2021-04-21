@@ -1,0 +1,13 @@
+var numberVal;
+numberVal = 1;
+// numberVal = 'Dinesh';
+numberVal.toString();
+numberVal = 3;
+var nameVal = 'Nendu';
+// nameVal = 2;
+var boolVal = true;
+var numArr = [2, 2, 2, 22];
+var nameArr = [];
+nameArr.push('Dinesh');
+nameArr.push(32);
+console.log(nameArr);
