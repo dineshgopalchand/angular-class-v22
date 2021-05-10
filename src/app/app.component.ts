@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-class-v22';
+  title = 'Angular class 22';
+
+  get titleVal(): string {
+    return this.title;
+  }
+  getTitleVal(): string {
+    return this.title;
+  }
 }
