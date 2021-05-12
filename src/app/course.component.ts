@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CourseService, CourseType } from './services/course.service';
 
 
 @Component({
@@ -15,31 +16,10 @@ import { Component } from '@angular/core';
 })
 export class CourseComponent {
     title = 'Course List';
-    courseList = [
-        {
-            id: 1,
-            name: 'Angular'
-        },
-        {
-            id: 2,
-            name: 'Nodejs'
-        },
-        {
-            id: 3,
-            name: 'HTML'
-        },
-        {
-            id: 4,
-            name: 'CSS'
-        },
-        {
-            id: 5,
-            name: 'JavaScript'
-        },
-        {
-            id: 1,
-            name: 'Java'
-        }
-    ];
+    courseList: CourseType[] = [] as CourseType[];
+    constructor(private courseService: CourseService) {
+        this.courseList = this.courseService.courseList;
+    }
 
 }
+
