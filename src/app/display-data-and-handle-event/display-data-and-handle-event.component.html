@@ -1,0 +1,45 @@
+<h3>{{title}}</h3>
+<!-- <h3>{{1+1}}</h3>
+<p>{{titleVal}}</p>
+<p>{{getTitleVal()}}</p>
+<p>{{sqrtVal(4)}}</p>
+<p>{{sqrtVal(8)}}</p>
+<p title="{{'SQRT Value'}}">{{sqrtVal(8)+sqrtVal(8)}}</p>
+<p title="{{title}}">{{sqrtVal(8)+sqrtVal(8)}}</p> -->
+
+<!-- <div title="some title" data-show-title="some other title" id="dummy">Lorem ipsum dolor sit amet.</div> -->
+<!-- <div>{{details}}</div>
+<div>{{formattedDetails}}</div>
+<div [innerHTML]="formattedDetails"></div>
+<div [innerText]="formattedDetails"></div>
+<div [textContent]="formattedDetails"></div>
+<img src="{{imgSrc}}" alt="{{imgSrc}}">
+<br>
+<img [src]="imgSrc" [alt]="imgSrc"> -->
+
+<table [attr.data-table-name]="title">
+    <tr>
+        <td>Lorem.</td>
+        <td>Praesentium?</td>
+        <td>Vel!</td>
+        <td>Natus?</td>
+    </tr>
+    <tr>
+        <td [attr.colspan]="colspan">Lorem.</td>
+
+        <td [attr.rowspan]="rowspan">Adipisci.</td>
+        <td>Ex?</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Eveniet!</td>
+
+        <td>Illo.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Corrupti?</td>
+        <td>Quod!</td>
+        <td>Voluptas!</td>
+    </tr>
+</table>
