@@ -13,6 +13,8 @@ export class DisplayDataAndHandleEventComponent implements OnInit {
   imgSrc = 'https://dummyimage.com/300x200/000/fff';
   colspan = 2;
   rowspan = 2;
+
+  isSaved = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -25,6 +27,9 @@ export class DisplayDataAndHandleEventComponent implements OnInit {
   }
   sqrtVal(num: number): number {
     return Math.sqrt(num);
+  }
+  changeStatus(): void {
+    this.isSaved = !this.isSaved;
   }
 
 }

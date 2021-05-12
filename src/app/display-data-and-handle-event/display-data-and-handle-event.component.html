@@ -17,7 +17,7 @@
 <br>
 <img [src]="imgSrc" [alt]="imgSrc"> -->
 
-<table [attr.data-table-name]="title">
+<!-- <table [attr.data-table-name]="title">
     <tr>
         <td>Lorem.</td>
         <td>Praesentium?</td>
@@ -42,4 +42,9 @@
         <td>Quod!</td>
         <td>Voluptas!</td>
     </tr>
-</table>
+</table> -->
+
+<button class="btn " [class.btn-primary]="!isSaved" [class.btn-danger]="isSaved">{{isSaved?'Delete':'Save'}}</button>
+<!-- <button class="btn btn-danger">Delete</button> -->
+<br>
+<button (click)="changeStatus()">Change Status</button>
